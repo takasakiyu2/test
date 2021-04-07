@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="bjk">
+    <meta name="description" content="test">
+    <meta name="keywords" content="HTML,CSS,JS">
+    <title>文档标题</title>
+    <link rel="stylesheet" href="css/1.css" type="text/css">
+    <script src="js/1.js"></script>
+</head>
+
+<body>
+    <!-- h$*6 -->
+    <h1>logo</h1>
+    <h2>h2</h2>
+    <h3>h3</h3>
+    <h4>h4</h4>
+    <h5>h5</h5>
+    <h6>h6</h6>
+    <p>段落</p>
+    <cite>作品的标题</cite>
+    <del>文档中已删除的文本</del>
+    <ins>已经被插入文档中的文本</ins>
+    <br> &lt;&copy;&nbsp;&reg;&gt;
+    <i>斜体文本</i>
+    <mark>带有记号的文本</mark>
+    <sup>上标文本</sup>
+    <sub>下标文本</sub>
+    <em>被强调的文本</em>
+    <strong>重要的文本</strong>
+    <dfn>一个定义项目</dfn>
+    <code>计算机代码文本</code>
+    <samp>样本文本</samp>
+    <kbd>键盘文本</kbd>
+    <var>变量</var>
+    <b>粗体文本(弃用)</b>
+    <u>与常规文<span class="span1">本风格不同的</span>文本(弃用)</u>
+    <a href="#" download="下载文件" target="_blank" hreflang="zh">超链接</a>
+    <hr>
+    <audio src="audio/ストラップ - doriko.mp3" controls loop muted preload="auto"></audio>
+    <img src="img/1.png" alt="" width="86" height="107">
+    <!-- ul>li*3 -->
+    <ul>
+        <li>无序列表1</li>
+        <li>无序列表2</li>
+    </ul>
+    <ol start="20">
+        <li>有序列表1</li>
+        <li>有序列表2</li>
+    </ol>
+    <dl>
+        <dt>描述列表的项目/名字</dt>
+        <dd>对一个描述列表中的项目/名字进行描述</dd>
+    </dl>
+    <table border="1">
+        <caption>表格的标题</caption>
+        <colgroup>
+            <col span="1" style="background:red">
+            <col span="2" style="background:yellow">
+        </colgroup>
+        <thead>
+            <tr>
+                <th colspan="3">表头单元格</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <td colspan="3">页脚内容</td>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <td>标准单元格</td>
+                <td rowspan="0">标准单元格</td>
+                <td>标准单元格</td>
+            </tr>
+            <tr>
+                <td>标准单元格</td>
+                <td>标准单元格</td>
+            </tr>
+        </tbody>
+    </table>
+    <form id="form1" name="表单名称" autocomplete="on" action="#" accept-charset="UTF-8" method="GET" target="_blank">
+        <fieldset name="fieldset1">
+            <legend>input</legend>
+            <input type="number" max="9" min="0" step="2">
+            <input type="range" autocomplete="on">
+            <input type="month" name="month">
+            <input type="time" autofocus>
+            <input type="week" required>
+            <input type="date" min="2021-01-01">
+            <input type="datetime-local">
+            <input type="color" autocomplete="on">
+            <input type="file" accept="audio/*,video/*" multiple>
+            <input type="radio" checked id="radio1" value="">
+            <label for="radio1">单选按钮</label>
+            <input type="checkbox" checked id="checkbox1" value="">
+            <input type="checkbox" disabled id="disabled-checkbox">
+            <label for="disabled-checkbox">禁用的复选框</label>
+            <input type="button" value="可点击的按钮">
+            <input type="submit" value="提交按钮">
+            <input type="image" src="img/1.png" alt="提交按钮替代文本" width="20" height="20">
+            <input type="reset" value="重置按钮">
+            <input type="text" autocomplete="on" placeholder="预期值的简短的提示信息">
+            <input type="text" readonly value="输入字段的默认值(只读)">
+            <input type="search" autocomplete="on" list="datalist1" placeholder="输入搜索内容">
+            <datalist id="datalist1">
+                <option value="选项1" disabled></option>
+                <option value="选项2"></option>
+            </datalist>
+            <input type="url" autocomplete="on" size="30" placeholder="输入url">
+            <input type="email" autocomplete="on" multiple placeholder="输入email">
+            <input type="password" autocomplete="on" maxlength="10" value="" placeholder="输入密码">
+            <input type="hidden" value="输入字段的默认值">
+        </fieldset>
+        <fieldset>
+            <legend>select</legend>
+            <select name="下拉列表名称">
+                <optgroup label="选项组1">
+                    <option disabled>被禁用选项</option>
+                    <option value="选项1发送的值" label="更短版本的选项1">选项1</option>
+                </optgroup>
+                <optgroup label="选项组2">
+                    <option selected>预先选定的选项2</option>
+                </optgroup>
+            </select>
+            <select size="2">
+                <option>选项1</option>
+                <option>选项2</option>
+                <option>选项3</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>textarea</legend>
+            <textarea maxlength="10" required placeholder="文本区域的期望值" wrap="soft"></textarea>
+            <textarea name="多行文本输入" readonly cols="21" rows="1">只读文本区域</textarea>
+        </fieldset>
+        <fieldset>
+            <legend>button</legend>
+            <button type="submit" name="button1">提交按钮</button>
+            <button type="button" value="按钮值">可点击的按钮</button>
+            <button type="reset">重置按钮</button>
+        </fieldset>
+    </form>
+    <label for="checkbox1" form="form1">复选框</label>
+    <input type="text" form="form1" placeholder="表单外控件">
+    <select multiple form="form1">
+        <option>选项1</option>
+        <option>选项2</option>
+        <option>选项3</option>
+    </select>
+    <textarea form="form1" disabled>被禁用的表单外的文本区域</textarea>
+    <button type="button" disabled form="form1">被禁用的表单外的可点击的按钮</button>
+    <hr>
+    <div class="clear-float">
+        <div class="div1"></div>
+    </div>
+
+    <div class="div2"></div>
+</body>
+
+</html>
